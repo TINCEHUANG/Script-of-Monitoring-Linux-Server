@@ -27,7 +27,7 @@ public class Sender implements Runnable
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-				lastRT = si.getResponseTime() / 1000.0;
+				lastRT = si.getResponseTime() / 1000000.0;
 				int connections = si.getConnection();				
 				if(connections == 0)
 					lastRT = 0;

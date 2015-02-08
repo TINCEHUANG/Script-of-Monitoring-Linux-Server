@@ -169,7 +169,7 @@ public class ServerInfo
 		Process p;
 		try
 		{
-			p = Runtime.getRuntime().exec("mpstat 2 5");
+			p = Runtime.getRuntime().exec("mpstat 1 4");
 			BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
 			while ((s = br.readLine()) != null)
 			{
