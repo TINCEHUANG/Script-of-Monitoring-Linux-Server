@@ -59,7 +59,7 @@ public class ServerInfo
 		{
 			//System.out.println("STARTING TCPDUMP");
 			String [] opts = null;
-			String[] tcpdumpCmd = {"/usr/sbin/tcpdump","-l", "-nntt" ,"-i", "eth1"};
+			String[] tcpdumpCmd = {"/usr/sbin/tcpdump","-l", "-nntt" ,"-i", "eth0"};
 			try
 			{
 				Process p = new ProcessBuilder(tcpdumpCmd).start();
